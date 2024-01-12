@@ -11,7 +11,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ja-JP">
+      <head>
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
